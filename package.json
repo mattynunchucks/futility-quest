@@ -5,7 +5,9 @@
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build",
   },
   "dependencies": {
     "react": "16.11.0",
